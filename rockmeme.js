@@ -3,12 +3,12 @@ function rockmeme(image) {
   style.innerText = "img.rockmeme {\nz-index:999999999;\nposition absoulute;\ntop:0;\nleft:0;\nheight:100%;\nwidth:100%;\nobject-fit: fill;\n}\n@keyframes rockmeme {\nfrom {\nopacity: 1;\n}\nto {\nopacity: 0;\n}\n}"
   document.head.appendChild(style)
   const runIt = () => {
-    const image = document.createElement("img")
-    image.classList.add("rockmeme")
-    image.setAttribute("src", image)
-    document.body.appendChild(image)
+    const imageElement = document.createElement("img")
+    imageElement.classList.add("rockmeme")
+    imageElement.setAttribute("src", image)
+    document.body.appendChild(imageElement)
     setTimeout(() => {
-      image.remove()
+      imageElement.remove()
     }, 1000);
   }
   addEventListener("keydown", runIt)
