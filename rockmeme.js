@@ -18,6 +18,6 @@ function rockmeme(image) {
   }
   //addEventListener("keydown", runIt)
   addEventListener("keyup", runIt)
-  addEventListener("onclick", runIt)
-  addEventListener("oncontextmenu", runIt)
+  addEventListener("click", runIt)
+  addEventListener("contextmenu", runIt)
 }
