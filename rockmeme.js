@@ -8,6 +8,7 @@ function rockmeme(image) {
     imageElement.classList.add("rockmeme")
     imageElement.setAttribute("src", image)
     document.body.appendChild(imageElement)
+    audio.currentTime = 0
     audio.play()
     setTimeout(() => {
       imageElement.remove()
