@@ -2,7 +2,7 @@
 /// dependency run-at.fn
 function rockmeme(image) {
   const style = document.createElement("style")
-  style.textContent = "img.rockmeme {\nanimation: rockmeme 1s;\nopacity:0;\nz-index:999999999;\nposition: fixed;\ntop:0;\nleft:0;\nheight:100%;\nwidth:100%;\nobject-fit: fill;\n}\n@keyframes rockmeme {\n0% {\nopacity:0;\n}\n1% {\nopacity: 1;\n}\n100% {\nopacity: 0;\n}\n}"
+  style.textContent = "img.rockmeme {\n--webkit-pointer-events:none;\npointer-events: none;\nuser-select: none;\nanimation: rockmeme 1s;\nopacity:0;\nz-index:999999999;\nposition: fixed;\ntop:0;\nleft:0;\nheight:100%;\nwidth:100%;\nobject-fit: fill;\n}\n@keyframes rockmeme {\n0% {\nopacity:0;\n}\n1% {\nopacity: 1;\n}\n100% {\nopacity: 0;\n}\n}"
   document.head.appendChild(style)
   const audio = new Audio("https://www.myinstants.com/media/sounds/the-rock-sound-effect.mp3")
   const runIt = () => {
