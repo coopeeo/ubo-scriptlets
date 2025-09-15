@@ -40,7 +40,7 @@ jobs:
          echo $stuffhome >> dist/index.html
          echo $stuffhome >> dist/404.html
          for f in ./*.js; do
-            echo "/// $f" >> dist/stuff.js
+            echo "/// ${f//./}" >> dist/stuff.js
             echo "$(cat $f)" >> dist/stuff.js
             echo "" >> dist/stuff.js
             # remember to quote it or spaces may misbehave
